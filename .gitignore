@@ -6,6 +6,18 @@ __pycache__/
 # C extensions
 *.so
 
+
+#idea配置文件
+
+.idea/
+*.iml
+*.iws
+*.ipr
+*.idea/workspace.xml
+*.idea/tasks.xml
+*.idea/dictionaries
+*.idea/shelf
+
 # Distribution / packaging
 .Python
 build/

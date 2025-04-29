@@ -2,6 +2,7 @@
 '''
 @Author : zhuzhenzhong
 @File : data_generate2.py
+数据自动化生成
 '''
 
 
