@@ -12,3 +12,5 @@ text2 = "Hello, Python!"
 differ = difflib.Differ()
 diff = differ.compare(text1, text2)
 print(' '.join(diff))
+
+#test
