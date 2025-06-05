@@ -5,7 +5,7 @@
 # @File     :demo_test
 # @Date     :2025/5/28 20:22
 # @Author   :zhuzhenzhong
-# @Description :PyCharm
+# @Description :ollama模型调试大模型
 -------------------------------------------------
 """
 import sys
