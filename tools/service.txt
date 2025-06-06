@@ -1,0 +1,315 @@
+    # 身份鉴权
+    GetStarIdByCommerceUserIdResp GetStarIdByCommerceUserId(1: GetStarIdByCommerceUserIdReq req)                 # 商业化id转星图id
+    GetStarLoginInfoResp GetStarLoginInfo(1: GetStarLoginInfoReq req)                                            # 星图session转星图id
+    # 任务台相关
+    GetMissionPlatformListResp GetMissionPlatformList(1: GetMissionPlatformListReq req)                 # 任务台大厅 列表
+    GetCreatorCenterShowListResp GetCreatorCenterShowList(1: GetCreatorCenterShowListReq req)           # 创作者中心 外露任务列表
+    GetCreatorMissionListResp GetCreatorMissionList(1: GetCreatorMissionListReq req)                    # 获取达人任务列表  我的任务
+    GetStarAuthorTaskStatusResp GetStarAuthorTaskStatus(1: GetStarAuthorTaskStatusReq req)              # 获取达人任务状态信息
+    GetMissionPlatformAuthorInfoResp GetMissionPlatformAuthorInfo(1: GetMissionPlatformAuthorInfoReq req) # 获取该抖音uid任务台信息
+    MultiCheckStarAuthorResp MultiCheckStarAuthor(1: MultiCheckStarAuthorReq  req)                      # 根据core_user_id 校验是不是星图达人
+    MultiGetMissionInfoResp MultiGetMissionInfo(1: MultiGetMissionInfoReq req)                          # 根据uniersal challenge id 获取任务详情 用于推荐任务
+    GetMissionIndustryBannerResp GetMissionIndustryBanner(1: GetMissionIndustryBannerReq req)           # 行业频道内定向banner
+    GetUserMissionSearchTagsResp GetUserMissionSearchTags(1: GetUserMissionSearchTagsReq req)           # 任务台任务快筛标签
+    GetMissionTaskCntResp GetMissionTaskCnt(1: GetMissionTaskCntReq req)                                # 获取抖音任务台相关任务数量
+    # 收益相关
+    GetAuthorTradeRecordsResp GetAuthorTradeRecords(1: GetAuthorTradeRecordsReq req)                    # 获取达人交易记录
+    GetAuthorOrderAmountResp GetAuthorOrderAmount(1: GetAuthorOrderAmountReq req)                       # 获取达人收益金额
+
+
+    # 组件相关
+    ItemBindComponentResp ItemBindComponent(1: ItemBindComponentReq req)                                # 视频绑定锚点
+    UpdateComponentBindStatusResp UpdateComponentBindStatus(1: UpdateComponentBindStatusReq req )       # 更新锚点状态
+    MultiGetItemLinkInfoResp MultiGetItemLinkInfo(1: MultiGetItemLinkInfoReq req)                       # 获取视频上的link信息
+    GetStarAuthorLiveOrderPackageNameResp GetStarAuthorLiveOrderPackageName(1: GetStarAuthorLiveOrderPackageNameReq req)    #获取星图进行中直播订单的包名
+    GetDouPlusDownloadComponentInfoResp GetDouPlusDownloadComponentInfo(1: GetDouPlusDownloadComponentInfoReq req)        # 获取视频上link&客户加白信息
+    MGetDouPlusDownloadComponentInfoResp MGetDouPlusDownloadComponentInfo(1: MGetDouPlusDownloadComponentInfoReq req)        # 获取视频上link&客户加白信息
+    CreateOrModifyCommonComponentResp CreateOrModifyCommonComponent(1: CreateOrModifyCommonComponentReq req)        # 创建组件信息（星图备份）
+    SyncDrawUsersResp SyncDrawUsers(1: SyncDrawUsersReq req) # 抽奖组件中奖结果同步星图
+
+    # 视频获取任务信息相关
+    MultiGetItemTaskInfoResp MultiGetItemTaskInfo(1: MultiGetItemTaskInfoReq req)                       # 获取视频相关任务和boost信息
+
+    # 企业号相关
+    GetEnterpriseComponentStatusResp GetEnterpriseComponentStatus(1: GetEnterpriseComponentStatusReq req)   # 企业号获取组件是否再使用中
+
+    GetLiveTaskResp GetLiveTask(1: GetLiveTaskReq req), # 获取星图直播任务列表
+
+    # 投稿直播CPS小程序
+    GetOrderIdByRoomIdResp GetOrderIdByRoomId(1: GetOrderIdByRoomIdReq req)     # 根据直播间id获取item_id
+    GetOrderInfoByOrderIdResp GetOrderInfoByOrderId(1: GetOrderInfoByOrderIdReq req)  # 根据订单id获取订单信息
+
+    #  电商相关
+    MultiGetStarEcomPromotionResp MultiGetStarEcomPromotion(1: MultiGetStarEcomPromotionReq req)    # 查看一个promotion_id是不是该用户的推广计划
+    GetAuthorizeItemIdsByShopIdToShowProductResp GetAuthorizeItemIdsByShopIdToShowProduct(1: GetAuthorizeItemIdsByShopIdToShowProductReq req)           # 废弃，V2代替，修正Base的序号问题
+    GetAuthorizeItemIdsByShopIdToShowProductV2Resp GetAuthorizeItemIdsByShopIdToShowProductV2(1: GetAuthorizeItemIdsByShopIdToShowProductV2Req req)     # 根据店铺ID查询已授权在商详页展示的视频ID
+
+    # 视频审核相关
+    GetStarAuditProcessResp GetStarAuditProcess(1: GetStarAuditProcessReq req)    # 星图先审后发标记
+    GetDouPlusAuditQueueConditionResp GetDouPlusAuditQueueCondition(1:GetDouPlusAuditQueueConditionReq req) #dou+获取进入审核队列的条件
+
+    # 管控策略相关
+    StarObjectControlResp StarObjectControl(1: StarObjectControlReq req)
+
+    # 投稿CPA相关
+    GetChallengeItemStaticInfoResp GetChallengeItemStaticInfo(1: GetChallengeItemStaticInfoReq req)  # 获取投稿视频CPA统计信息
+
+
+    # 达人交易基础
+    OpenStarAuthorTaskResp OpenStarAuthorTask(1: OpenStarAuthorTaskReq req)   // 达人开通任务
+    GetAuthorRecommendPriceResp  GetAuthorRecommendPrice(1:  GetAuthorRecommendPriceReq req)   // 获取达人推荐报价
+    GetStarAuthorTaskResp  GetStarAuthorTask(1:  GetStarAuthorTaskReq req)   // 获取达人任务信息
+    SetStarAuthorTaskResp  SetStarAuthorTask(1:  SetStarAuthorTaskReq req)   // 设置达人任务信息
+    CheckStarAuthorTaskStatusResp  CheckStarAuthorTaskStatus(1:  CheckStarAuthorTaskStatusReq req)   // 校验达人的下单状态
+
+    CalculateOrderPriceResp CalculateOrderPrice(1: CalculateOrderPriceReq req)  # 计算订单价格
+    CreateStarDemandResp CreateStarDemand(1: CreateStarDemandReq req)  # 撮合交易线上化:创建任务
+    PrecancelDemandResp PrecancelDemand(1: PrecancelDemandReq req)     # 撮合交易线上化:任务预取消
+    CancelDemandResp CancelDemand(1: CancelDemandReq req)     # 撮合交易线上化:任务取消
+    DemanderGetUniversalDemandListResp DemanderGetUniversalDemandList(1: DemanderGetUniversalDemandListReq req) // 客户查询demand列表
+    DemanderGetUniversalOrderSummaryResp DemanderGetUniversalOrderSummary(1: DemanderGetUniversalOrderSummaryReq req) //查询客户订单汇总个数
+
+    GetUdeskTokenResp GetUdeskToken(1: GetUdeskTokenReq req)    # 撮合交易线上化:客服助手的token
+    GetUdeskSignatureResp GetUdeskSignature(1: GetUdeskSignatureReq req) # http_get 生成udesk 客服系统的签名
+    GetUdeskUserInfoResp GetUdeskUserInfo(1: GetUdeskUserInfoReq req) # http_get 获取udesk 需要的用户信息
+
+    GetDemanderTradeRecordListResp GetDemanderTradeRecordList(1: GetDemanderTradeRecordListReq req) # 撮合交易线上化 交易列表
+    ApproveOrderResp ApproveOrder(1: ApproveOrderReq req)
+    GetOrderItemResp GetOrderItem(1: GetOrderItemReq req)      # 撮合交易线上化:获取直播间
+    TextFilterResp TextFilter(1: TextFilterReq req)   # 撮合交易线上化:黑词过滤
+    GenerateQrCodeResp GenerateQrCode(1: GenerateQrCodeReq req)
+
+    GetLiveResourceUrlResp GetLiveResourceUrl(1: GetLiveResourceUrlReq req) # 在独立页面浏览直播回访需要调用该接口
+
+    # 抖音投稿接口回掉
+    GetAwemeOrderBasicInfoResp GetAwemeOrderBasicInfo(1:GetAwemeOrderBasicInfoReq req)  # 判断 是否为投稿任务，是否是指派任务 RPC打标逻辑
+
+    MGetAuthorPriceResp MGetAuthorPrice(1: MGetAuthorPriceReq req) # 批量获取达人报价
+    GetStarDataByPlatformUidResp  GetStarDataByPlatformUid(1: GetStarDataByPlatformUidReq req)  //百应资金账号打通：根据媒体渠道的id获取星图用户信息(达人侧)
+
+    # 小程序相关
+    GetSmallAppChallengeDetailResp GetSmallAppChallengeDetail(1: GetSmallAppChallengeDetailReq req)    # 小程序获取任务详情星图数据
+    GetSmallAppChallengeDetailV2Resp GetSmallAppChallengeDetailV2(1: GetSmallAppChallengeDetailV2Req req) # 小程序任务 根据任务ID获取任务详情
+    GetSmallAppAuthorParticipateInfoResp GetSmallAppAuthorParticipateInfo(1: GetSmallAppAuthorParticipateInfoReq req) # 获取达人参与信息，当前参与次数 最大参与次数
+    MultiGetSmallAppItemDetailResp MultiGetSmallAppItemDetail(1: MultiGetSmallAppItemDetailReq req)    # 小程序批量获取视频概要信息
+    GetSmallAppItemDailyDetailResp GetSmallAppItemDailyDetail(1: GetSmallAppItemDailyDetailReq req)    # 小程序获取视频详细信息
+
+    # 直播相关
+    GetActiveLiveTaskResp GetActiveLiveTask(1: GetActiveLiveTaskReq req),       # 获取待直播的直播任务 供达人绑定星图任务
+    GetRoomByTagResp GetRoomByTag(1: GetRoomByTagReq req),       # 根据标签和时间段查询直播间
+
+    # 直播订单获取订单信息相关
+    MultiGetLiveOrderInfoResp MultiGetLiveOrderInfo(1: MultiGetLiveOrderInfoReq req),       # 任务id获取任务详细信息，供抖音端上接口使用
+
+    # star任务相关
+    GetStarMissionResp GetStarMission(1: GetStarMissionReq req)    # star获取任务详情星图数据
+
+    # 星图指派相关
+    GetOrderDemanderInfoResp GetOrderDemanderInfo(1: GetOrderDemanderInfoReq req)        # 获取任务对应的客户ID
+
+    # 媒体端相关
+    GetAwemeActiveOrdersResp GetAwemeActiveOrders(1: GetAwemeActiveOrdersReq req)                                 # 获取抖音可绑定视频的任务列表
+    GetAwemeMissionActiveOrdersResp GetAwemeMissionActiveOrders(1: GetAwemeMissionActiveOrdersReq req)            # 获取任务台可参与任务的列表
+    MultiGetAwemeMissionOrderInfoResp MultiGetAwemeMissionOrderInfo(1: MultiGetAwemeMissionOrderInfoReq req)      # 获取任务台可参与任务的任务详情
+
+    # 直播伴侣相关
+    SelectLiveTaskResp SelectLiveTask(1: SelectLiveTaskReq req)   # 选择直播任务
+    # 微头条 头条达人权限回调
+    post_hook.PublishPreviewHookResponse PublishPreviewHook(1: post_hook.PublishPreviewHookRequest req) # 微头条判断达人是否为星图达人
+    # 图文头条 达人权限回调
+    mp_article_processor.PublishProcessResponse PublishProcess(1: mp_article_processor.PublishProcessRequest req) # 图文判断达人是否为星图达人
+
+    SendStarMessageResp SendStarMessage(1: SendStarMessageReq req) # 获取bp发来的消息
+    # 判断是否入驻以及返回协议id
+    CanAuthorRegisterResp CanAuthorRegister(1: CanAuthorRegisterReq req)
+    # 达人签署协议
+    StarAuthorAcceptProtocolsResp StarAuthorAcceptProtocols(1: StarAuthorAcceptProtocolsReq req)
+
+    # 云图获取达人相关信息
+    MGetStarAuthorInfosForYuntuResp MGetStarAuthorInfosForYuntu(1: MGetStarAuthorInfosForYuntuReq req) #云图获取星图达人统计数据
+
+    # 批量获取达人id接口
+    MGetStarAuthorIdResp MGetStarAuthorId(1: MGetStarAuthorIdReq req)
+    # 获取达人id接口
+    GetAuthorIdByCoreUserIdResp GetAuthorIdByCoreUserId(1: GetAuthorIdByCoreUserIdReq req)
+    # 获取达人和客户媒体端uid
+    GetAuthorAndDemanderInfoResp GetAuthorAndDemanderInfo(1: GetAuthorAndDemanderInfoReq req)
+
+    # 根据star_id查询core_user_id
+    GetAwemeUidByStarIdResp GetAwemeUidByStarId(1: GetAwemeUidByStarIdReq req)
+    # 获取星图客服链接
+    GetStarCustomerServiceLinkResp GetStarCustomerServiceLink(1: GetStarCustomerServiceLinkReq req)
+
+    # 创建星图客户
+    DemanderGetOcUidAndCheckIsRegisterResp DemanderGetOcUidAndCheckIsRegister(1: DemanderGetOcUidAndCheckIsRegisterReq req) # 查询商业化uid是否已注册过星图
+    CreateOrGetStarDemanderAccountResp CreateOrGetStarDemanderAccount(1: CreateOrGetStarDemanderAccountReq req) # 创建星图star_id&开户
+    BindQualificationAndCreateCustomerResp BindQualificationAndCreateCustomer(1: BindQualificationAndCreateCustomerReq req) # 共享资质&创建customer
+    GetBaseOcUserInfoByStarIdResp GetBaseOcUserInfoByStarId(1: GetBaseOcUserInfoByStarIdReq req)
+    CreateDemanderContractResp CreateDemanderContract(1: CreateDemanderContractReq req) # 创建星图客户合同（需要有customer_id）
+    # 查询客户余额
+    GetDemanderBalanceResp GetDemanderBalance(1: GetDemanderBalanceReq req)
+    # 客户充值
+    CreateDemanderChargeResp CreateDemanderCharge(1: CreateDemanderChargeReq req)
+
+    ####### 即合 #######
+    # 3m获取优惠券使用范围
+    GetCouponConfigOptionsResp GetCouponConfigOptions(1: GetCouponConfigOptionsReq req)
+    # 添加优惠券活动领取权限
+    AddUserCouponActivityPermissionsResp AddUserCouponActivityPermissions(1: AddUserCouponActivityPermissionsReq req)
+    # 返回客户优惠券领取信息
+    GetUserCouponInfoResp GetUserCouponInfo(1: GetUserCouponInfoReq req)
+    # 返回外部业务线优惠券信息
+    GetBizLineCouponActivityResp GetBizLineCouponActivity(1: GetBizLineCouponActivityReq req)
+    # 根据视频id推荐即合服务
+    GetRecommendSpuByVideoIdResp GetRecommendSpuByVideoId(1: GetRecommendSpuByVideoIdReq req)
+
+     # 云图获取星图榜单数据
+    GetStarHotListTagResp GetStarHotListTag(1: GetStarHotListTagReq req)        # 获取榜单行业筛选项
+    GetStarHotListDataResp GetStarHotListData(1: GetStarHotListDataReq req)     # 获取榜单数据
+
+    GetBrandInfoByStarIdResp GetBrandInfoByStarId(1: GetBrandInfoByStarIdReq req)  #获取星图品牌
+    GetStarInfoByVerifyCodeResp GetStarInfoByVerifyCode(1: GetStarInfoByVerifyCodeReq req) #通过验证码获取星图信息
+
+    # 获取星图用户的状态详情
+    GetStarUserStatusDetailResp GetStarUserStatusDetail(1: GetStarUserStatusDetailReq req)
+    # 数据中心获取达人总分模块的收入情况
+    GetAuthorBusinessAmountResp GetAuthorBusinessAmount(1: GetAuthorBusinessAmountReq req)
+
+     # 视频&语音&录屏开播星图任务入口
+    AwemeLiveStarAuthorTaskResp AwemeLiveStarAuthorTask(1: AwemeLiveStarAuthorTaskReq req)
+
+    # 根据抖音core_user_id或星图star_id 查询星图信息
+    GetStarUserInfosByAwemeIdResp GetStarUserInfosByAwemeId(1: GetStarUserInfosByAwemeIdReq req)
+
+    # 星图视频信息获取
+    GetStarItemInfoResp GetStarItemInfo(1: GetStarItemInfoReq req) # 通过abase获取星图视频数据
+
+    GetTotalUnreadNumResp GetTotalUnreadNum(1: GetTotalUnreadNumReq req) # 根据抖音uid获取星图达人im总未读数
+
+    # 抖音钱包是否展示星图标示
+    wallet_service_decision.MakeCellDecisionResponse MakeCellDecision(1: wallet_service_decision.MakeCellDecisionRequest req)
+
+    # 抖音钱包一次性提现校验
+    CanOneOffWithdrawResp CanOneOffWithdraw(1: CanOneOffWithdrawReq req)
+
+    # 通过session_lib解析字段获取star_id
+    GetStarIdByPlatformResp GetStarIdByPlatform(1: GetStarIdByPlatformReq req)
+
+    # 抖音个人页我的星图
+    AwemeGetMineStarCardInfoResp AwemeGetMineStarCardInfo(1: AwemeGetMineStarCardInfoReq req)
+    # 抖音个人页星图合作
+    AwemeGetCorpStarCardInfoResp AwemeGetCorpStarCardInfo(1: AwemeGetCorpStarCardInfoReq req)
+    # 抖音个人页是否展示扩展模块
+    AwemeProfileShouldShowStarCardResp AwemeProfileShouldShowStarCard(1: AwemeProfileShouldShowStarCardReq req)
+
+    # 标记CSR公益客户
+    SetDemanderCSRTagResp SetDemanderCSRTag(1: SetDemanderCSRTagReq req)
+
+    # 榜单查询接口
+    SearchStarItemRankResp SearchStarItemRank(1: SearchStarItemRankReq req)
+
+    #视频详情
+    SearchStarItemInfoResp SearchStarItemInfo(1: SearchStarItemInfoReq req)
+
+    #视频受众分析
+    SearchStarItemFansAnalysisResp SearchStarItemFansAnalysis(1: SearchStarItemFansAnalysisReq req)
+
+    #视频统计
+    SearchStarItemStatisticsResp SearchStarItemStatistics(1: SearchStarItemStatisticsReq req)
+
+    # 小程序相关
+    GetSmallAppLiveChallengeDetailResp GetSmallAppLiveChallengeDetail(1: GetSmallAppLiveChallengeDetailReq req)
+    GetSmallAppAuthorInfoResp GetSmallAppAuthorInfo(1: GetSmallAppAuthorInfoReq req)
+    GetSmallAppItemListResp GetSmallAppItemList(1: GetSmallAppItemListReq req)
+
+    # 创服-首页-涨收入-星图
+    GetAuthorIncomeModuleResp GetAuthorIncomeModule(1: GetAuthorIncomeModuleReq req)
+    CompleteAuthorIncomeGuideTaskResp CompleteAuthorIncomeGuideTask(1: CompleteAuthorIncomeGuideTaskReq req)
+    ChangeAuthorIncomeRecommendTaskResp ChangeAuthorIncomeRecommendTask(1: ChangeAuthorIncomeRecommendTaskReq req)
+
+    # 创服-变现任务-做任务-星图
+    GetAuthorBeginGuideCardResp GetAuthorBeginGuideCard(1: GetAuthorBeginGuideCardReq req)
+
+    # 流量激励创作者触达
+    GetEncourageAuthorInfoResp GetEncourageAuthorInfo(1: GetEncourageAuthorInfoReq req)
+
+
+    # 投稿任务
+    SyncTaskAuditInfoResp SyncTaskAuditInfo(1: SyncTaskAuditInfoReq req) # 同步客户任务审核信息
+    GetTaskInfoResp GetTaskInfo(1: GetTaskInfoReq req) # 获取客户任务信息
+    GetTaskItemSettlementInfoResp GetTaskItemSettlementInfo(1: GetTaskItemSettlementInfoReq req) # 获取客户任务作品结算信息
+
+    #获取达人天级任务统计指标
+    GetAuthorStarOrderStatDailyResp GetAuthorStarOrderStatDaily(1: GetAuthorStarOrderStatDailyReq req)
+
+     #星图直播间信息
+    GetStarLivingRoomInfoResp GetStarLivingRoomInfo(1: GetStarLivingRoomInfoReq req)  # 获取星图直播间信息
+
+    // 查询MCN达人和PGC达人账号相关信息
+    GetAuthorDetailAndSettleInfoByStarIdResp GetAuthorDetailAndSettleInfoByStarId(1: GetAuthorDetailAndSettleInfoByStarIdReq req)
+
+    // crm获取星图结算视频列表
+    GetStarVideoListStatResp GetStarVideoListStat(1: GetStarVideoListStatReq req)
+
+    # 游戏发行人
+    # 获取最近上新的任务列表
+    # reward_task.RecentOnlineTaskListResp GetRecentOnlineTaskList(1: GetRecentOnlineTaskListReq req)
+
+    # 任务详情页
+    GetStarTTGameTaskInfoResp GetStarTTGame (1: GetStarTTGameTaskInfoReq req)
+
+    # 最近上新
+    GetRecentOnlineTaskListResp GetRecentOnlineTaskList (1: GetRecentOnlineTaskListReq req)
+
+    # 获取指派任务
+    GetAssignedTaskListResp GetAssignedTaskList (1: GetAssignedTaskListReq req)
+
+    # 任务列表
+    TaskConfigListForUserResp TaskConfigListForUser(1: TaskConfigListForUserReq req)
+
+    # 收益总榜
+    VideoSoaringListInfoResp VideoSoaringListInfo(1: VideoSoaringListInfoReq req)
+    # 我的任务获取视频排序所需信息
+    GetHomeValidVideoListResp GetHomeValidVideoList(1: GetHomeValidVideoListReq req)
+    # 失效视频获取视频排序所需信息
+    GetHomeInvalidVideoListResp GetHomeInvalidVideoList(1: GetHomeInvalidVideoListReq req)
+    # 批量获取ttgame视频详情
+    MGetVideoInfoResp MGetVideoInfo(1: MGetVideoInfoReq req)
+    # 获取用户无效视频数
+    GetUserInvalidVideoCntResp GetUserInvalidVideoCnt(1: GetUserInvalidVideoCntReq req)
+
+    # 判断是否可以上传
+    CanUserUploadTTGameItemResp CanUserUploadTTGameItem(1: CanUserUploadTTGameItemReq req)
+    # 获取配置曝光的发行人任务
+    GetStarTtgameExposureResourcesResp GetStarTtgameExposureResources(1: GetStarTtgameExposureResourcesReq req)
+    # 获取配置排序的发行人任务
+    GetStarTtgameTaskRankResp GetStarTtgameTaskRank(1: GetStarTtgameTaskRankReq req)
+    # 设置配置排序的发行人任务
+    SetStarTtgameTaskRankResp SetStarTtgameTaskRank(1: SetStarTtgameTaskRankReq req)
+
+    IsCreditUsersResp IsCreditUsers(1: IsCreditUsersReq req) # 获取查询star_id是否授信用户
+    # 好物测评接入dou测评
+    CreatorEvaluationGetMissionStatusCountResponse CreatorEvaluationGetMissionStatusCount(1: CreatorEvaluationGetMissionStatusCountRequest req)
+    CreatorEvaluationGetMissionListResponse CreatorEvaluationGetMissionList(1: CreatorEvaluationGetMissionListRequest req)
+
+    ## 计费相关的api
+    # 创建预算计划
+    CreateBudgetPlanResp CreateBudgetPlan(1: CreateBudgetPlanReq req)
+    # 支付预算计划
+    PayBudgetPlanResp PayBudgetPlan(1: PayBudgetPlanReq req)
+    # 创建计费单
+    CreateChargeOrderResp CreateChargeOrder(1: CreateChargeOrderReq req)
+    # 同步计费单条目明细
+    SyncChargeOrderItemResp SyncChargeOrderItem(1: SyncChargeOrderItemReq req)
+    # 确认计费单明细同步完成
+    ConfirmChargeOrderItemSyncFinishedResp ConfirmChargeOrderItemSyncFinished(1: ConfirmChargeOrderItemSyncFinishedReq req)
+    # 结算计费单
+    SettleChargeOrderResp SettleChargeOrder(1: SettleChargeOrderReq req)
+    # 退款，调减预算计划
+    ReduceBudgetPlanAmountResp ReduceBudgetPlanAmount(1: ReduceBudgetPlanAmountReq req)
+    # 获取计费
+    GetChargeFeeRateResp GetChargeFeeRate(1:GetChargeFeeRateReq req) # http_get 获取计费费率
+    # 获取客户信息
+    MGetDemanderInfoResp MGetDemanderInfo(1: MGetDemanderInfoReq req) #http_get 获取客户信息
+    # 获取用户结算状态
+    GetUserSettleStatusResp GetUserSettleStatus(1: GetUserSettleStatusReq req) # http_get 获取用户结算状态

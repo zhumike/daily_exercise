@@ -1,0 +1,36 @@
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes demander.cpm.douyin --disable-warnings  -p no:fratest -sv  --env-tag=boe_bling
+
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes author.jihe.order.douyin::AuthorRequestCancel  --disable-warnings  -p no:fratest -sv  --env-tag=boe_star_pre_release
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes author.jihe.order.douyin::Accept_Official  --disable-warnings  -p no:fratest -sv  --env-tag=boe_star_pre_release
+
+
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes author.jihe.order.admin::AdminOperation  --disable-warnings  -p no:fratest -sv  --env-tag=boe_star_pre_release
+
+
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes author.jihe.video.douyin::UploadVideoAssign_Official  --disable-warnings  -p no:fratest -sv  --env-tag=prod
+
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes author.jihe.order.douyin::AuthorRequestCancel  --disable-warnings  -p no:fratest -sv
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes demander.jihe.order.douyin::CreateDemanderAssignIgnoreScriptofficialWithoutAd --disable-warnings  -p no:fratest -sv  --env-tag=prod
+
+
+
+
+pytest test  --include-nodes author.jihe.order.admin::AdminOperation -sv --reruns 2 -n 3 --env-tag boe_star_pre_release --alluredir allure_report/xml --junitxml=output/result.xml
+
+
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes demander.cpm.douyin::Create  --disable-warnings  -p no:fratest -sv  --env-tag=boe_bling
+
+

@@ -1,0 +1,35 @@
+{
+        "event_result": {
+                "0": {
+                        "amu_id": 0,
+                        "amu_name": "开始节点",
+                        "audit_ban_reason": "",
+                        "audit_status": 1,
+                        "object_id": 6998062545542188329,
+                        "object_type": 0,
+                        "scene_id": 6987323602777423916
+                },
+                "11": {
+                        "amu_id": 11,
+                        "amu_name": "千川",
+                        "audit_ban_reason": "",
+                        "audit_status": 1,
+                        "object_id": 7021466070686895375,
+                        "object_type": 0,
+                        "scene_id": 6987323602777423916
+                },
+                "-1": {
+                        "amu_id": -1,
+                        "amu_name": "结束节点",
+                        "audit_ban_reason": "",
+                        "audit_status": 1,
+                        "object_id": 6998062545542188329,
+                        "object_type": 0,
+                        "scene_id": 6987323602777423916
+                }
+        },
+        "final_audit_status": 1,
+        "object_id": 6998062545542188329,
+        "object_type": 0,
+        "scene_id": 6987323602777423916
+}

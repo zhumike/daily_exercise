@@ -1,0 +1,126 @@
+
+git checkout  -b little_game  origin/feature/charge_for_little_game
+
+文档：
+https://bytedance.feishu.cn/docx/NHtudfw7YoP5RExnKuVc3yUtnpf
+
+
+ tests.author.test_DemandGetAuthorItemSku.py待优化
+
+
+export PYTHONPATH=.:/opt/tiger/toutiao/app/ad/star_demander
+python star_demander/scripts/one_click/sync_demander_es.py
+
+
+12342149478
+1. 验证码：2069
+
+1776977231254716
+
+"star_ad_unite":1694086167
+
+
+
+https://www-boe.xingtu.cn/ad/creator/task-data/project-reports
+
+1775184660817933
+
+20230920161750414B0281C718DB0B82E8
+
+
+几个重要的表：
+`ad_star_user`.`star_user_settle_info`
+`ad_star_user`.`star_user_contract_info`
+ad_supplier`.`star_protocol`
+
+橙子线上链接：https://www.chengzijianzhan.com/tetris/page/7281165258988519484
+https://www.chengzijianzhan.com/tetris/page/7280816979291717687
+
+DemanderGetChallengeItemList用例数据有问题。
+AwemeProfileShouldShowStarCard  下游数据反序列化问题，待开发排查 
+
+
+脚本修复计划：
+
+1.goplatform,plaatform脚本修复，成功率100%
+2.demander 修复
+
+1703764821
+1703765421
+
+
+
+
+
+
+{
+    "strategies": "demander_login,account_auth",
+    "login_required": "true"
+}
+
+
+
+1.接口自动化线上问题review，问题遗留跟进
+2.测试需求跟进
+3.自动化review
+4.异常测试，初步了解背景
+
+ git checkout -b zzz20231218 origin/release_train_261324
+
+448232759510119
+
+
+
+
+
+
+
+星图boe 基准环境目前存在严重的5xx报错问题，导致目前业务测试无法在boe环境通过前端来操作业务，需要开发一起投入治理：
+
+1.无法正常客户发单
+2.后端接口报大量网关层的5xx异常，只要集中在orders服务，goorders。
+
+
+测试诉求：保证boe基准环境的稳定性，要保证星图的履单流程在boe 基准环境可用
+
+
+
+20240104204604FC12626889016A806775   --第一次请求
+
+
+
+ad.engine.aweme(golang)
+ad.targeting.aweme  c++
+母账号：12342240705
+验证码：003916
+
+祝振中
+
+
+
+2024011219474456BBB2BE41DEFD5BE19B
+
+
+星广二期：https://bytedance.larkoffice.com/docx/CMNgdhIb0oKRv5xmbApcsxD2nFf
+https://bytedance.larkoffice.com/wiki/M5UMwkUqYiucURkOSUNck0VOn2e
+https://bytedance.larkoffice.com/docx/WJt5d6oEmog3cGxbPjQcCbSVnuf
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

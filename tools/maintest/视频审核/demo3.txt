@@ -1,0 +1,12 @@
+data = {
+    "resource_id": 6995379879227264300,  # item_id 对应的resource_id
+    "audit_info": {
+        "task_id": 0,
+        "verify_id": 0,
+        "verifier": "zhoufengshun",
+        "verify_status": 1, # 审核结果
+        "remark": "good",
+        'create_time': int(time.time())
+    },
+    "event_type": "star_material_task_audit",
+}

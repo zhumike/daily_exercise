@@ -1,0 +1,17 @@
+#/bin/bash
+if [ $# -lt 1 ];then
+  echo 'Usage: sh create_branch.sh ${branch}'
+  exit 1
+fi
+cur_dir=$(dirname ${0:a})
+new_branch=${1}
+repos=$(grep -vE '^#' ${cur_dir}/repos.txt | grep -vE '^\s*$')
+for repo in ${repos};do
+  echo '----------------------------'
+  echo create ${repo}:${new_branch}
+  url_encode_repo=$(echo ${repo} | sed 's#/#%2F#g')
+  proj_info=$(curl --request GET --header "PRIVATE-TOKEN: LdfFzsWxtLFvVURh4QMK" "https://code.byted.org/api/v4/projects/${url_encode_repo}" 2>/dev/null)
+  proj_id=$(python3 -c "import json; print(json.loads('${proj_info}')[\"id\"])")
+  res=$(curl --request POST --header "PRIVATE-TOKEN: LdfFzsWxtLFvVURh4QMK" "https://code.byted.org/api/v4/projects/${proj_id}/repository/branches?branch=${new_branch}&ref=master" 2>/dev/null)
+  echo ${res}
+done

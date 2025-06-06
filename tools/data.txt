@@ -1,0 +1,96 @@
+{
+    'order_item_info': {
+        'author_list': [
+            {
+                'author_id': '6885640802911911949',
+                'video_type': 1,
+                'cnt': 1,
+                'price_info': {
+                    'price': 1600
+                },
+                'price': 1600
+            }
+        ],
+        'order_type': 1,
+        'use_discount': true
+    },
+    'real_sum_boost_pay': 0,
+    'demand_info': {
+        'demand_source': 1,
+        'promotion_target': 3,
+        'demand_name': 'zzz审核广告投放审核测试订单',
+        'product_name': 'zzz审核广告投放审核测试订单',
+        'expiration_time': 1630339200,
+        'expiration_time_end': 1631116800,
+        'contact_id': '6995075626566680620',
+        'product_information': 'zzz审核广告投放审核测试订单',
+        'first_class_category': 1901,
+        'second_class_category': 190101,
+        'attachment': [
+
+        ],
+        'ad_sync': 2,
+        'product_line': [
+
+        ],
+        'business_department': [
+
+        ],
+        'budget_account': [
+
+        ],
+        'accept_expiration_day': 1,
+        'brand_ids': [
+            '6808420821313273869',
+            '6808420821388754958'
+        ],
+        'other': {
+            'detailDemand': 'zzz审核广告投放审核测试订单',
+            'music': '',
+            'propDemand': '',
+            'sceneDemand': '',
+            'scriptDemand': '',
+            'specialTopic': '',
+            'otherDemand': '',
+            'videoGenre': '',
+            'usageScenarios': [
+
+            ],
+            'actorDemand': '',
+            'shootingSiteDemand': ''
+        },
+        'topic_json': '{\'content_advice_v2\':{\'info\':\'#随星而定嗨购618test\',\'id\':\'1697743566624775\',\'required\':true,\'content\':\'添加官方话题“#随星而定嗨购618test”\'},\'aweme_challenge_ids\':[\'1697743566624775\']}',
+        'ignore_script': true,
+        'ad_audit_info': {
+            'ocean_engine': {
+                'advertiser_id': '1691130145891341',
+                'product_link': '',
+                'product_pics': [
+
+                ],
+                'ad_sync_origin': 1,
+                'sync_duration': 7,
+                'ad_sync_material': true,
+                'ad_sync': 2
+            },
+            'dou_plus': {
+                'advertiser_id': '1685052351270919'
+            },
+            'qianchuan': {
+                'advertiser_id': '1688465916279816'
+            }
+        },
+        'advertiser_id': '1691130145891341',
+        'product_link': '',
+        'product_pics': [
+
+        ],
+        'order_type': 1,
+        'component_type': 0
+    },
+    'real_sum_pay': 1680,
+    'service_name': 'orders.AdStarOrdersService',
+    'service_method': 'CreateDemandV2',
+    'sign_strict': 1,
+    'sign': '147eaf175499c06d00c28076a1d0ccf9'
+}

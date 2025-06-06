@@ -1,0 +1,77 @@
+
+PYTHONPATH=/Users/admin/zhuzhenzhong/code/jihe_changjing_master/star_scenario_test   pytest test --include-nodes 
+
+weekend 提报bug标准
+https://bytedance.feishu.cn/docx/H5sedgeRToqrbgxcwVscfeljn3c
+
+bug看板标准：
+https://qm.bytedance.net/insight/others/bugs
+
+ git checkout   zzz_merge_master_pass_qa_star
+
+
+
+--env-tag=boe_star_auto_test    --branch=master -sv
+
+2023.0926 添加qa weekend ci卡点配置
+
+
+
+
+MR last commit首次执行成功率
+MR last commit跳过率 = last commit跳过自动化测试的进行合码的MR数 / 所有weekend卡点的MR数
+
+
+
+https://www.xingtu.cn/facilitator/user/star-ad-unite/detail/7281575036669657125
+https://www.chengzijianzhan.com/tetris/page/7280816979291717687
+
+
+2023.1101 qa更新卡点配置
+    branches: ["release_train_**",master,"review_branch_**"]
+
+
+需要解决的问题：
+
+
+
+
+
+--env-tag=boe_star_auto_test  --branch=master -sv
+--env-tag=boe_star_coverage_test  --branch=master -sv
+--env-tag=boe_star_ci_test  --branch=master -sv
+
+--env-tag=boe_oceanengine_permission  --branch=ft_star_permission -sv
+
+
+--env-tag=boe_demander_risk_punish  --branch=feat_demander_risk_punish -sv
+
+
+boe_star_coverage_test
+
+
+--env-tag=boe_add_settlement_biz_typ   --branch=feat_add_settlement_biz_type -sv
+
+
+
+要优化的用例计划：
+
+
+
+https://www.xingtu.cn/ad/user-center/user/account/company-brand-manage
+
+git checkout -b  feat_author_filed_realtime_stream  origin/feat_author_filed_realtime_stream
+
+【用例Hotfixed修复-2023.1115】
+
+
+1.weekend平台每日提bug跟踪
+
+https://www.xingtu.cn/sup/creator/user/overview
+
+充值客户账号=1776253493065741
+邮箱：xingtuqa@163.com
+虚客登录密码：xingtudexiwang126@
+
+
+
