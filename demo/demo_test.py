@@ -40,6 +40,7 @@ print(dict_q1.items())
 for i1,i2 in dict_q1.items():
     print("项目1:{},项目2:{}".format(i1,i2))
 
-
+shu_list = [1,2,4,8,0]
+print(min(shu_list))
 
 

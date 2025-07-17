@@ -20,8 +20,8 @@ def find_missing_number(start:int,nums:list)-> int:
     return sum1 - sum(nums)
 
 if __name__=="__main__":
-    num_list = [1,2,3,4,5,6,8]
-    print(find_missing_number(1,num_list))
+    num_list = [3,0,1]
+    print(find_missing_number(0,num_list))
 
 
 

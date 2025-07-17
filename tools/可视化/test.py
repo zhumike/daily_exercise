@@ -21,7 +21,8 @@ IO  = '测试数据1.xls'#'/Users/admin/zhuzhenzhong/python/tools/可视化/测�
 raw_data = pd.read_excel(io=IO)
 print(raw_data)
 print(raw_data.values) #只提取有效数据
-
+mem_list = [ x[0] for x in raw_data.values]
+print(mem_list)
 # import pandas as pd
 # import numpy as np
 #
